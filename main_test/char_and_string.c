@@ -12,6 +12,6 @@ int main(void)
 
 	a = 'H';
 	b = "hello";
-	_printf("I love Jesus\n");
+	_printf("char[%c]\nstring[%s]\n", a);
 	return (0);
 }

@@ -56,3 +56,35 @@ int print_percent(__attribute__((unused))va_list args)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * print_integer - prinnts integer
+ * @args: list of unknown arguments.
+ * Return: The length of number printed
+ */
+
+int print_integer(va_list args)
+{
+	int number_length, n, div;
+	unsigned int num;
+
+	number_length = 0;
+	div = 1;
+	n = va_arg(args, int);
+	if (n < 0)
+	{
+		number_length += _putchar('-');
+		num = n * -1;
+	}
+	else
+		num = n;
+	while (num / div > 9)
+		div *= 10;
+	while (div != 0)
+	{
+		number_length += _putchar('0' + num / div);
+		num %= div;
+		div /= 10;
+	}
+	return (number_length);
+}
