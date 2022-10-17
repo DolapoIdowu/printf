@@ -16,7 +16,7 @@ typedef struct linker
 {
 	char *sym;
 	int (*func_ptr)(va_list);
-}linker;
+} linker;
 
 /*needed functions*/
 
