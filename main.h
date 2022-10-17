@@ -25,7 +25,8 @@ int print_character(va_list args);
 int print_string(va_list args);
 int print_percent(__attribute__((unused))va_list args);
 int print_integer(va_list args);
-
+int print_unsignd(unsigned int n);
+int print_unsigned_int(va_list args);
 
 
 /*main functions*/
