@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 
 /*creation of structure*/
@@ -30,12 +31,29 @@ int print_percent(__attribute__((unused))va_list args);
 int print_integer(va_list args);
 int print_unsigned(unsigned int n);
 int print_unsigned_int(va_list args);
+int check_hex_case(int num, char x);
+int print_base2(va_list args);
+int print_base8(va_list args);
+int Print_base16_lower(va_list args);
+int Print_base16_upper(va_list args);
+
 
 
 /*main functions*/
 
 int _printf(const char *format, ...);
 int linking_func(const char *format, linker linked_list[], va_list args);
+
+
+/*helping function and string manipulation*/
+
+char *rev_strings(char *t);
+void put_base(char *str);
+unsigned int base_lens(unsigned int num, int base);
+char *_memcpy(char *dest, char *sc, unsigned int nr);
+int rot13(va_list args);
+int print_reversed(va_list args);
+
 
 
 #endif

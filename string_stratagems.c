@@ -16,7 +16,7 @@ int print_reversed(va_list args)
 	if (s == NULL)
 		return (0);
 
-	p = rev_string(s);
+	p = rev_strings(s);
 	if (p == NULL)
 		return (0);
 

@@ -18,6 +18,10 @@ int _printf(const char *format, ...)
 		{"u", print_unsigned_int},
 		{"r", print_reversed},
 		{"R", rot13},
+		{"b", print_base2},
+		{"o", print_base8},
+		{"x", Print_base16_lower},
+		{"X", Print_base16_upper},
 		{NULL, NULL}
 	};
 	va_list args;
