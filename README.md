@@ -70,3 +70,5 @@ You don’t have to handle the flag characters
 You don’t have to handle field width
 You don’t have to handle precision
 You don’t have to handle the length modifiers
+Task 4
+Use a local buffer of 1024 chars in order to call write as little as possible.
