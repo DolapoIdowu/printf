@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * rev_strings - reverses a string
@@ -41,11 +40,11 @@ void put_base(char *str)
 	int n;
 
 	for (n = 0; str[n] != '\0'; n++)
-		_put_char(str[n]);
+		_putchar(str[n]);
 }
 /**
  * base_lens - calculates the octal number length
- * @q: number of length being calculated
+ * @num: number of length being calculated
  * @base: base to be calculated
  * Return: integer length of a number
  */
@@ -65,7 +64,7 @@ unsigned int base_lens(unsigned int num, int base)
  * @dest: destination for copying
  * @sc: source to copy from
  * @nr: number of bytes to copy
- * Return: _memcpy() function returns a pointer to dest
+ * Return: a pointer to dest
  */
 char *_memcpy(char *dest, char *sc, unsigned int nr)
 {
