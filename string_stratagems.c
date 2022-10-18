@@ -45,7 +45,7 @@ int rot13(va_list args)
 	if (s == NULL)
 		return (0);
 
-	for (n = 0; str[n] != '\0'; n++)
+	for (n = 0; s[n] != '\0'; n++)
 	{
 		for (d = 0; d <= 52; d++)
 		{

@@ -60,7 +60,7 @@ int print_base8(va_list args)
 	if (decimal_num < 1)
 		return (-1);
 	octa_len = base_lens(decimal_num, 8);
-	inverted_octal = malloc(sizeof(char) * len + 1);
+	inverted_octal = malloc(sizeof(char) * octa_len + 1);
 	if (inverted_octal == NULL)
 		return (-1);
 	for (i = 0; decimal_num > 0; i++)
