@@ -7,6 +7,7 @@
  */
 
 int print_reversed(va_list args)
+{
 	int lens;
 	char *s;
 	char *p;
@@ -21,7 +22,7 @@ int print_reversed(va_list args)
 	_put_char(p[lens]);
 	free(p);
 	return (lens);
-	}
+}
 
 /**
  * rot13 - Converts string to rot13
